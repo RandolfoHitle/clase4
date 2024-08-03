@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="/guardar" method="post">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br>
+
+        <label for="diasSemana">Días de la Semana:</label>
+        <select id="diasSemana" name="diasSemana">
+            <option value="lunes">Lunes</option>
+            <option value="martes">Martes</option>
+            <option value="miercoles">Miércoles</option>
+            <option value="jueves">Jueves</option>
+            <option value="viernes">Viernes</option>
+            <option value="sabado">Sábado</option>
+            <option value="domingo">Domingo</option>
+        </select><br>
+
+        <label> Género:</label>
+        <input type="checkbox" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="checkbox" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br>
+
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br>
+
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>
